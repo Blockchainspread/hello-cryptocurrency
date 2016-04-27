@@ -1,0 +1,61 @@
+#!/bin/bash
+#
+# Original by NoBody
+# Modified by NoBody
+#
+
+if [ ! -f ~/.gamecredits/gamecredits.conf ]; then
+	touch ~/.gamecredits/gamecredits.conf
+    rpcu=$(pwgen -ncsB 35 1)
+    rpcp=$(pwgen -ncsB 75 1)
+    echo "rpcuser="$rpcu"
+    rpcpassword="$rpcp"
+    daemon=1 
+	rpcallowip=127.0.0.1
+    listen=1
+    server=1
+    txindex=1" > ~/.gamecredits/gamecredits.conf
+fi
+
+cat << "EOF"
+
+                     .ed"""" """$$$$be.
+                   -"           ^""**$$$e.
+                 ."                   '$$$c
+                /                      "4$$b
+               d  3                      $$$$
+               $  *                   .$$$$$$
+              .$  ^c           $$$$$e$$$$$$$$.
+              d$L  4.         4$$$$$$$$$$$$$$b
+              $$$$b ^ceeeee.  4$$ECL.F*$$$$$$$
+  e$""=.      $$$$P d$$$$F $ $$$$$$$$$- $$$$$$
+ z$$b. ^c     3$$$F "$$$$b   $"$$$$$$$  $$$$*"      .=""$c
+4$$$$L        $$P"  "$$b   .$ $$$$$...e$$        .=  e$$$.
+^*$$$$$c  %..   *c    ..    $$ 3$$$$$$$$$$eF     zP  d$$$$$
+  "**$$$ec   "   %ce""    $$$  $$$$$$$$$$*    .r" =$$$$P""
+        "*$b.  "c  *$e.    *** d$$$$$"L$$    .d"  e$$***"
+          ^*$$c ^$c $$$      4J$$$$$% $$$ .e*".eeP"
+             "$$$$$$"'$=e....$*$$**$cz$$" "..d$*"
+               "*$$$  *=%4.$ L L$ P3$$$F $$$P"
+                  "$   "%*ebJLzb$e$$$$$b $P"
+                    %..      4$$$$$$$$$$ "
+                     $$$e   z$$$$$$$$$$%
+                      "*$c  "$$$$$$$P"
+                       ."""*$$$$$$$$bc
+                    .-"    .$***$$$"""*e.
+                 .-"    .e$"     "*$c  ^*b.
+          .=*""""    .e$*"          "*bc  "*$e..
+        .$"        .z*"      322      ^*$e.   "*****e.
+        $$ee$c   .d"                     "*$.        3.
+        ^*$E")$..$"                         *   .ee==d%
+           $.d$$$*                           *  J$$$e*
+            """""                              "$$$"
+
+ 
+EOF
+
+echo "Gamerscoins Network is Ready to use Captain!"
+echo "Start it with *gamecreditsd -daemon*"
+echo "For help *gamecredits-cli help*"
+echo "Debug Gamecredits *tail -f ~/.gamecredits/debug.log"
+echo "If you're reading this... Congratulations, you're alive.If that's not something to smile about,then I don't know what is."
