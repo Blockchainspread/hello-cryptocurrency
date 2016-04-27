@@ -1,0 +1,37 @@
+#!/bin/bash
+#
+# Original by NoBody
+# Modified by NoBody
+#
+
+cat << "EOF"
+                       _ ,___,-'",-=-. 
+           __,-- _ _,-'_)_  (""`'-._\ `.   
+        _,'  __ |,' ,-' __)  ,-     /. |    Every time I plant a seed ...
+      ,'_,--'   |     -'  _)/         `\     Everyone thinks of changing the world, but no one thinks of changing himself.
+    ,','      ,'       ,-'_,`           :     
+    ,'     ,-'       ,(,-(              : 
+         ,'       ,-' ,    _            ; 
+        /        ,-._/`---'            / 
+       /        (____)(----. )       ,' 
+      /         (      `.__,     /\ /, 
+     :           ;-.___         /__\/| 
+     |         ,'      `--.      -,\ | 
+     :        /            \    .__/ 
+      \      (__            \    |_ 
+       \       ,`-, *       /   _|,\ 
+        \    ,'   `-.     ,'_,-'    \ 
+       (_\,-'    ,'\")--,'-'       __\ 
+        \       /  // ,'|      ,--'  `-. 
+         `-.    `-/ \'  |   _,'         `. 
+            `-._ /      `--'/             \ 
+ -hrrrrrrr-    ,'           |              \ 
+              /             |               \ 
+           ,-'              |               / 
+          /                 |             -'   
+EOF
+
+echo "Gamerscoins Network is Ready to use Captain!"
+echo "Start it with *gamecreditsd -daemon*"
+echo "For help *gamecredits-cli help*"
+echo "If you're reading this... Congratulations, you're alive.If that's not something to smile about,then I don't know what is."
