@@ -6,9 +6,13 @@ echo "deb http://blockchainspread.github.io/hello-cryptocurrency debian/" >> /et
 apt-get update
 
 apt-get install bitcoin
+
 apt-get install litecoin
+
 apt-get install gamecredits
+
 apt-get install okcash
+
 apt-get install dogecoin
 
 More cryptocurrencys coming soon.
