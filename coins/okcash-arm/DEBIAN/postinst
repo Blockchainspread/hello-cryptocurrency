@@ -1,0 +1,69 @@
+#!/bin/bash
+#
+# Original by NoBody
+# Modified by NoBody
+#
+
+if [ ! -f ~/.okcash/okcash.conf ]; then
+
+#Download OkCash Blockchain
+mkdir ~/.okcash
+cd ~/.okcash/; wget https://github.com/okcashpro/ok-blockchain/releases/download/latest/ok-blockchain.zip
+cd ~/.okcash/; unzip ok-blockchain.zip
+
+#Create OkCash Conf
+touch ~/.okcash/okcash.conf
+rpcu=$(pwgen -ncsB 35 1)
+rpcp=$(pwgen -ncsB 75 1)
+echo "rpcuser="$rpcu"
+rpcpassword="$rpcp"
+daemon=1 
+rpcallowip=127.0.0.1
+listen=1
+server=1
+txindex=1" > ~/.okcash/okcash.conf
+fi
+
+cat << "EOF"
+ 	
+
+                                            ,: OK is open-source 
+                                          ,' | its design is public
+                                         /   : nobody owns or controls OK 
+                                      --'   /  and everyone can take part.
+                                      \/ /:/
+                                      / ://_\
+                                   __/   /
+                                   )'-. /
+                                   ./  :\
+                                    /.' '
+                                  '/'
+                                  +
+                                 '
+                               `.
+                           .-"-
+                          (    |
+                       . .-'  '.
+                      ( (.   )8:
+                  .'    / (_  )
+                   _. :(.   )8P  `
+               .  (  `-' (  `.   .
+                .  :  (   .a8a)
+               /_`( "a `a. )"'
+           (  (/  .  ' )=='
+          (   (    )  .8"   +
+            (`'8a.( _(   (
+         ..-. `8P    ) `  )  +
+       -'   (      -ab:  )
+     '    _  `    (8P"Ya
+   _(    (    )b  -`.  ) +
+  ( 8)  ( _.aP" _a   \( \   *
++  )/    (8P   (88    )  )
+   (a:f   "     `"`  )  )
+EOF
+
+echo "OkCash Network is Ready to use Captain!"
+echo "Console *okcashd -help"
+echo "Desktop *okcash*"
+echo "Debug OkCash *tail -f ~/.okcash/debug.log"
+echo "If you're reading this... Congratulations, you're alive.If that's not something to smile about,then I don't know what is."
