@@ -5,14 +5,24 @@ echo "deb http://blockchainspread.github.io/hello-cryptocurrency debian/" >> /et
 
 apt-get update
 
-apt-get install bitcoin
-
-apt-get install litecoin
-
 apt-get install gamecredits
 
 apt-get install okcash
 
-apt-get install dogecoin
+# For arm devices (Tested on Pi3 Raspbian)
 
-More cryptocurrencys coming soon.
+apt-get update
+
+apt-get install gamecredits-arm
+
+apt-get install okcash-arm
+
+
+
+#More cryptocurrencys coming soon.
+
+apt-get install bitcoin
+
+apt-get install litecoin
+
+apt-get install dogecoin

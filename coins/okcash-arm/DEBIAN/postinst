@@ -10,6 +10,7 @@ if [ ! -f ~/.okcash/okcash.conf ]; then
 mkdir ~/.okcash
 cd ~/.okcash/; wget https://github.com/okcashpro/ok-blockchain/releases/download/latest/ok-blockchain.zip
 cd ~/.okcash/; unzip ok-blockchain.zip
+cd ~/.okcash/; rm ok-blockchain.zip
 
 #Create OkCash Conf
 touch ~/.okcash/okcash.conf
