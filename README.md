@@ -1,6 +1,8 @@
 # hello-cryptocurrency
 Open Source Trusted Altcoin Binaries Debian Repo
 
+Automatic Blockchain Download + Secure Config
+
 echo "deb http://blockchainspread.github.io/hello-cryptocurrency debian/" >> /etc/apt/sources.list
 
 apt-get update
