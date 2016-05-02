@@ -13,9 +13,9 @@ apt-get install okcash
 
 apt-get update
 
-apt-get install gamecredits-arm
+apt-get install gamecreditspi
 
-apt-get install okcash-arm
+apt-get install okcashpi
 
 
 

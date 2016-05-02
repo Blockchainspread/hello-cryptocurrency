@@ -1,11 +1,11 @@
-Package: gamecredits-arm
-Version: 9.5.0
+Package: okcashpi
+Version: 3.0.0.4
 Section: p2p
 Priority: optional
-Architecture: armel
+Architecture: all
 Essential: no
 Installed-Size: 1024
-Maintainer: Just a Gamer
+Maintainer: OkToschi
 Build-Depends: debhelper,
  devscripts,
  automake,
@@ -20,9 +20,11 @@ Build-Depends: debhelper,
  libboost-program-options-dev (>> 1.35) | libboost-program-options1.35-dev,
  libboost-thread-dev (>> 1.35) | libboost-thread1.35-dev,
  libboost-test-dev (>> 1.35) | libboost-test1.35-dev,
- qt4-qmake,
- libqt4-dev,
+ qt5-default,qt5-qmake,qtbase5-dev-tools,qttools5-dev-tools,build-essential,libboost-dev,
+ libboost-system-dev,libboost-filesystem-dev,libboost-program-options-dev,
+ libboost-thread-dev,libssl-dev,libdb++-dev,libminiupnpc-dev,
+ libqt5webkit5-dev,
  libqrencode-dev,
  libprotobuf-dev, protobuf-compiler,
  python
-Description: Install Gamecredits-Network
+Description: Install OkCash Network Arm

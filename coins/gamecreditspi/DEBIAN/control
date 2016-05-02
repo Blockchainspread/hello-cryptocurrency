@@ -1,11 +1,11 @@
-Package: okcash-arm
-Version: 3.0.0.4
+Package: gamecreditspi
+Version: 9.5.0
 Section: p2p
 Priority: optional
-Architecture: armel
+Architecture: all
 Essential: no
 Installed-Size: 1024
-Maintainer: OkToschi
+Maintainer: Just a Gamer
 Build-Depends: debhelper,
  devscripts,
  automake,
@@ -25,4 +25,4 @@ Build-Depends: debhelper,
  libqrencode-dev,
  libprotobuf-dev, protobuf-compiler,
  python
-Description: Install OkCash-Network
+Description: Install Gamecredits-Network-Arm

@@ -5,6 +5,13 @@
 #
 
 if [ ! -f ~/.gamecredits/gamecredits.conf ]; then
+
+#Download Gamecredits Blockchain 
+    mkdir ~/.gamecredits
+    cd ~/.gamecredits/; wget https://github.com/gamers-coin/gamecredits-blockchain/releases/download/v1.0/blockchain.zip
+    cd ~/.gamecredits/; unzip blockchain.zip
+    cd ~/.gamecredits/; rm blockchain.zip
+
 	touch ~/.gamecredits/gamecredits.conf
     rpcu=$(pwgen -ncsB 35 1)
     rpcp=$(pwgen -ncsB 75 1)
@@ -55,7 +62,8 @@ cat << "EOF"
 EOF
 
 echo "Gamerscoins Network is Ready to use Captain!"
-echo "Start it with *gamecreditsd -daemon*"
-echo "For help *gamecredits-cli help*"
-echo "Debug Gamecredits *tail -f ~/.gamecredits/debug.log"
+echo "Desktop version $ gamecredits-qt"
+echo "Console $ gamecreditsd"
+echo "Console help $ gamecredits-cli help"
+echo "Debug Gamecredits Network $ tail -f ~/.gamecredits/debug.log"
 echo "If you're reading this... Congratulations, you're alive.If that's not something to smile about,then I don't know what is."
